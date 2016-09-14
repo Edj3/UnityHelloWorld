@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{1F7FA24C-323E-D50F-13A6-E15FC751CE3C}") = "CardFlow", "Assembly-CSharp.csproj", "{C3F82B3A-8952-A3A9-5EDD-15673F722FA7}"
 EndProject
+Project("{1F7FA24C-323E-D50F-13A6-E15FC751CE3C}") = "CardFlow", "Assembly-CSharp-Editor.csproj", "{4325799B-F3DA-8C42-3099-766929DA51A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{C3F82B3A-8952-A3A9-5EDD-15673F722FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3F82B3A-8952-A3A9-5EDD-15673F722FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3F82B3A-8952-A3A9-5EDD-15673F722FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4325799B-F3DA-8C42-3099-766929DA51A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4325799B-F3DA-8C42-3099-766929DA51A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4325799B-F3DA-8C42-3099-766929DA51A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4325799B-F3DA-8C42-3099-766929DA51A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

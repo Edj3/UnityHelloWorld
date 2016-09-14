@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using DG.DemiLib;
 
 public class Grid : MonoBehaviour {
 
@@ -37,13 +38,16 @@ public class Grid : MonoBehaviour {
 		www.Dispose();
 		www = null;
 
+		foreach (GameObject card in cards) {
+			card.transform.DOScaleY(3, 1);
+		}
 
 
 	}
 
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	private void CreatePlanes(){
