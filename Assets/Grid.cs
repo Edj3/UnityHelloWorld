@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.DemiLib;
+using DG.Tweening;
 
 public class Grid : MonoBehaviour {
 
@@ -23,24 +24,26 @@ public class Grid : MonoBehaviour {
 
 
 	IEnumerator loadImage(GameObject obj) {
+		Debug.Log ("Loading image! ");
 		string url = "https://upload.wikimedia.org/wikipedia/en/9/92/Halo_4_box_artwork.png";
 		WWW www = new WWW(url);
 
 		// Wait for download to complete
 		yield return www;
 
+		Debug.Log ("Image loaded. Getting texture!");
 		// assign texture
-		Texture2D tex = new Texture2D(www.texture.width, www.texture.height, TextureFormat.DXT1, true);
+		Texture2D tex = new Texture2D(www.texture.width, www.texture.height, TextureFormat.ARGB32, false);
+		tex.wrapMode = TextureWrapMode.Clamp;
 
 		obj.GetComponent<Renderer> ().material.mainTexture = tex;
+		Debug.Log ("Main material: " + obj.GetComponent<Renderer> ().material);
 		www.LoadImageIntoTexture(tex);
 
 		www.Dispose();
 		www = null;
 
-		foreach (GameObject card in cards) {
-			card.transform.DOScaleY(3, 1);
-		}
+
 
 
 	}
@@ -72,12 +75,15 @@ public class Grid : MonoBehaviour {
 		MeshFilter meshFilter = (MeshFilter)plane.AddComponent(typeof(MeshFilter));
 		meshFilter.mesh = CreateMesh(width, height);
 		MeshRenderer renderer = plane.AddComponent(typeof(MeshRenderer)) as MeshRenderer;
-		renderer.material.shader = Shader.Find ("Particles/Additive");
-		Texture2D tex = new Texture2D(1, 1);
-		tex.SetPixel(0, 0, Color.green);
-		tex.Apply();
-		renderer.material.mainTexture = tex;
-		renderer.material.color = Color.blue;
+//		renderer.material.shader = Shader.Find ("Particles/Additive");
+//		Texture2D tex = new Texture2D(1, 1);
+//		tex.SetPixel(0, 0, Color.green);
+//		tex.Apply();
+//		renderer.material.mainTexture = tex;
+//		renderer.material.color = Color.blue;
+
+		Material newMat = Resources.Load("Simple_Material", typeof(Material)) as Material;
+		renderer.material = newMat;
 		return plane;
 	}
 

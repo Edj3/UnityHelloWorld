@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4325799B-F3DA-8C42-3099-766929DA51A2}</ProjectGuid>
+    <ProjectGuid>{C4C967CF-4EBA-BB22-B10A-EAD13869A68A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -130,6 +130,33 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiEditor">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenProEditor">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -139,37 +166,10 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="DemiEditor">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
- </Reference>
- <Reference Include="DOTween43">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenEditor">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
- </Reference>
- <Reference Include="DemiLib">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
- </Reference>
- <Reference Include="DOTween50">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenProEditor">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenPro">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
- </Reference>
- <Reference Include="DOTween46">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{C3F82B3A-8952-A3A9-5EDD-15673F722FA7}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{39CC60F8-71F6-D68D-97FD-237437B0EF6F}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

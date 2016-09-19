@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C3F82B3A-8952-A3A9-5EDD-15673F722FA7}</ProjectGuid>
+    <ProjectGuid>{39CC60F8-71F6-D68D-97FD-237437B0EF6F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -148,23 +148,23 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
- <Reference Include="DOTween43">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
- </Reference>
  <Reference Include="DemiLib">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
- </Reference>
- <Reference Include="DOTween50">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
- <Reference Include="DOTweenPro">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="DOTween46">
- <HintPath>/Users/arpit/CardFlow/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>/Users/arpit/labs/UnityHelloWorld/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
