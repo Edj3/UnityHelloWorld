@@ -1,143 +1,77 @@
+
 using System;
 using UnityEngine;
 
 namespace VRStandardAssets.Utils
 {
-	// EJ Mann (8/31/2016) - Created Custom VR Interactive Item class to inherit (may need to be interface)
-    // This class should be added to any gameobject in the scene
-    // that should react to input based on the user's gaze.
-    // It contains events that can be subscribed to by classes that
-    // need to know about input specifics to this gameobject.
+	// This class should be added to any gameobject in the scene
+	// that should react to input based on the user's gaze.
+	// It contains events that can be subscribed to by classes that
+	// need to know about input specifics to this gameobject.
 	public class VRInteractiveItem : MonoBehaviour
-    {
-
+	{
 		public event Action OnOver;             // Called when the gaze moves over this object
-        public event Action OnOut;              // Called when the gaze leaves this object
-        public event Action OnClick;            // Called when click input is detected whilst the gaze is over this object.
-        public event Action OnDoubleClick;      // Called when double click input is detected whilst the gaze is over this object.
-        public event Action OnUp;               // Called when Fire1 is released whilst the gaze is over this object.
-        public event Action OnDown;             // Called when Fire1 is pressed whilst the gaze is over this object.
+		public event Action OnOut;              // Called when the gaze leaves this object
+		public event Action OnClick;            // Called when click input is detected whilst the gaze is over this object.
+		public event Action OnDoubleClick;      // Called when double click input is detected whilst the gaze is over this object.
+		public event Action OnUp;               // Called when Fire1 is released whilst the gaze is over this object.
+		public event Action OnDown;             // Called when Fire1 is pressed whilst the gaze is over this object.
 
 
-        protected bool m_IsOver;
+		protected bool m_IsOver;
 
 
-        public bool IsOver
-        {
-            get { return m_IsOver; }              // Is the gaze currently over this object?
-        }
-
-
-        // The below functions are called by the VREyeRaycaster when the appropriate input is detected.
-        // They in turn call the appropriate events should they have subscribers.
-        public void Over()
-        {
-            m_IsOver = true;
-
-            if (OnOver != null)
-                OnOver();
-        }
-
-
-        public void Out()
-        {
-            m_IsOver = false;
-
-            if (OnOut != null)
-                OnOut();
-        }
-
-
-        public void Click()
-        {
-            if (OnClick != null)
-                OnClick();
-        }
-
-
-        public void DoubleClick()
-        {
-            if (OnDoubleClick != null)
-                OnDoubleClick();
-        }
-
-
-        public void Up()
-        {
-            if (OnUp != null)
-                OnUp();
-        }
-
-
-        public void Down()
-        {
-            if (OnDown != null)
-                OnDown();
-        }
-	
-//		[SerializeField] private Material m_NormalMaterial;                
-//		[SerializeField] private Material m_OverMaterial;                  
-//		[SerializeField] private Material m_ClickedMaterial;               
-//		[SerializeField] private Material m_DoubleClickedMaterial;         
-		//[SerializeField] private VRInteractiveItem m_InteractiveItem;
-//		[SerializeField] private Renderer m_Renderer;
-
-
-		private void Awake ()
+		public bool IsOver
 		{
-
+			get { return m_IsOver; }              // Is the gaze currently over this object?
 		}
 
 
-		private void OnEnable()
+		// The below functions are called by the VREyeRaycaster when the appropriate input is detected.
+		// They in turn call the appropriate events should they have subscribers.
+		public void Over()
 		{
-			this.OnOver += HandleOver;
-			this.OnOut += HandleOut;
-			this.OnClick += HandleClick;
-			this.OnDoubleClick += HandleDoubleClick;
+			m_IsOver = true;
+
+			if (OnOver != null)
+				OnOver();
 		}
 
 
-		private void OnDisable()
+		public void Out()
 		{
-			this.OnOver -= HandleOver;
-			this.OnOut -= HandleOut;
-			this.OnClick -= HandleClick;
-			this.OnDoubleClick -= HandleDoubleClick;
+			m_IsOver = false;
+
+			if (OnOut != null)
+				OnOut();
 		}
 
 
-		//Handle the Over event
-		private void HandleOver()
+		public void Click()
 		{
-			Debug.Log ("Show Over");
-			//item.Select (true);
+			if (OnClick != null)
+				OnClick();
 		}
 
 
-		//Handle the Out event
-		private void HandleOut()
+		public void DoubleClick()
 		{
-			Debug.Log("Show out state");
-			//item.Select (false);
-
-			//grid.Select(false);
+			if (OnDoubleClick != null)
+				OnDoubleClick();
 		}
 
 
-		//Handle the Click event
-		private void HandleClick()
+		public void Up()
 		{
-			Debug.Log("Show click state");
-
+			if (OnUp != null)
+				OnUp();
 		}
 
 
-		//Handle the DoubleClick event
-		private void HandleDoubleClick()
+		public void Down()
 		{
-			Debug.Log("Show double click");
-
+			if (OnDown != null)
+				OnDown();
 		}
-    }
+	}
 }
