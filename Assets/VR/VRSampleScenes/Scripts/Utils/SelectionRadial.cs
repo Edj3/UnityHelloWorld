@@ -30,15 +30,15 @@ namespace VRStandardAssets.Utils
 
         private void OnEnable()
         {
-            m_VRInput.OnDown += HandleDown;
-            m_VRInput.OnUp += HandleUp;
+//            m_VRInput.OnDown += HandleDown;
+//            m_VRInput.OnUp += HandleUp;
         }
 
 
         private void OnDisable()
         {
-            m_VRInput.OnDown -= HandleDown;
-            m_VRInput.OnUp -= HandleUp;
+//            m_VRInput.OnDown -= HandleDown;
+//            m_VRInput.OnUp -= HandleUp;
         }
 
 

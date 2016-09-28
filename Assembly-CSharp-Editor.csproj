@@ -86,6 +86,7 @@
      <Compile Include="Assets\TextMesh Pro\Editor\TMPro_TextContainerEditor.cs" />
      <Compile Include="Assets\TextMesh Pro\Editor\TMPro_TexturePostProcessor.cs" />
      <Compile Include="Assets\TextMesh Pro\Editor\TMPro_uiEditorPanel.cs" />
+     <Compile Include="Assets\editor\FindMissingScripts.cs" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
